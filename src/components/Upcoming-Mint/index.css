@@ -1,0 +1,30 @@
+.total-mint {
+  background: #e7f5e4;
+  border-radius: 23px;
+}
+table,
+.echoapp {
+  background: #ffffff;
+  box-shadow: 1px 1px 11px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  text-align: center;
+}
+
+thead {
+  background: #e7f5e4;
+}
+
+th,
+td {
+  padding: 10px 5px;
+}
+tr td:nth-child(1),
+tr th:nth-child(1),
+.echoapp tr td:nth-child(2),
+.echoapp tr th:nth-child(2) {
+  border-right: 1px solid #bfbfbf;
+}
+
+.echoapp tbody tr:nth-child(even) {
+  background: #ebf4e8;
+}

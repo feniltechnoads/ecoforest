@@ -1,0 +1,74 @@
+@import url(//db.onlinewebfonts.com/c/e9591193aa91ce28ad8c8f91c03f6c7b?family=TerminaW05-Bold);
+@import url(//db.onlinewebfonts.com/c/1064f0ad1cb65fdab43bb592ddd8aa91?family=Gilroy-Bold);
+@import url(//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy);
+
+
+.popup
+{
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.7s;
+  animation-name: animatetop;
+  animation-duration: 0.7s;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.modalBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalBackground .container .popup
+{
+  margin-top: 85px;  
+  max-height: 85vh;
+  overflow: auto !important;
+
+}
+.popup h2 {
+  /* font-family: ; */
+  font-family: "TerminaW05-Bold";
+  line-height: 61px;
+}
+
+.popup p,
+.leftBox .social h5,
+.popup input {
+  font-family: "Gilroy";
+}
+
+.leftBox .social h5,
+.popup button {
+  font-family: "Gilroy-Bold";
+}
+
+.social-discord:before {
+  font-size: 25px;
+}
+.social-twitter:before {
+  font-size: 20px;
+}
+.social-insta:before {
+  font-size: 20px;
+}
