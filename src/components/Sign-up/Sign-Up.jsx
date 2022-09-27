@@ -1,8 +1,34 @@
 import React from "react";
 import AOS from "aos";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function SignUp() {
   AOS.init();
+
+  const handleOnSignUp = (e) => {
+    e.preventDefault();
+
+    let emailcheck = document.getElementById("emailcheck").value;
+    let pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (pattern.test(emailcheck)) {
+      document.getElementById("errormMessage").innerHTML =
+        "";
+      toast.success("Thank you, You are join Our Newsletter", {
+        position: "top-right",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    } else {
+      let errormMessage = document.getElementById("errormMessage");
+      errormMessage.innerHTML = "Invalid Email ID";
+      errormMessage.style.color = "red";
+    }
+  };
 
   return (
     <>
@@ -21,22 +47,27 @@ function SignUp() {
               get notified on new updates.
             </p>
           </div>
-          <div className="flex justify-center mt-10 space-x-3 md:flex-row flex-col items-center md:gap-0 gap-3">
-            <div>
-              <input
-                type="text"
-                className="border-2 rounded-lg border-black p-3 md:w-full w-48 outline-none "
-                placeholder="Enter your email address"
-              />
-            </div>
-            <a href="">
-              <div className="bg-black py-3 px-5  text-white rounded-lg md:whitespace-normal  whitespace-nowrap cursor-pointer transition ease-in-out duration-1000 hover:-translate-y-1 hover:shadow-lg shadow-lg hover:bg-white hover:text-black ">
-                Sign Up
+          <form action="" onSubmit={handleOnSignUp}>
+            <div className="flex justify-center mt-10 space-x-3 md:flex-row flex-col items-top md:gap-0 gap-3">
+              <div>
+                <input
+                  type="email"
+                  className="border-2 rounded-lg border-black p-3 md:w-full w-48 outline-none "
+                  placeholder="abc@gmail.com"
+                  id="emailcheck"
+                />
+                <span className="block" id="errormMessage"></span>
               </div>
-            </a>
-          </div>
+              <div>
+                <button className="bg-black py-3 px-5  text-white rounded-lg md:whitespace-normal border-2 whitespace-nowrap cursor-pointer transition ease-in-out duration-1000 hover:-translate-y-1 hover:shadow-lg shadow-lg hover:bg-white hover:text-black">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
+      <ToastContainer />
     </>
   );
 }

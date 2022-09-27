@@ -44,11 +44,13 @@
   margin-top: 85px;  
   max-height: 85vh;
   overflow: auto !important;
+  box-shadow: 1px 1px 11px 2px rgba(0, 0, 0, 0.15);
+
 
 }
 .popup h2 {
   /* font-family: ; */
-  font-family: "TerminaW05-Bold";
+  font-family: "TerminaW05-Bold"; 
   line-height: 61px;
 }
 
@@ -71,4 +73,13 @@
 }
 .social-insta:before {
   font-size: 20px;
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+-ms-overflow-style: none;  /* IE and Edge */
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Upcoming-Mint/index.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -10,6 +10,10 @@ import SliderImage4 from "../../image/SliderImage4.png";
 import SliderImage5 from "../../image/SliderImage5.png";
 
 const UpcomingMint = () => {
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+      }, [])
     const StableData = [
         {
             id: 1,
@@ -182,7 +186,7 @@ const UpcomingMint = () => {
 
     return (
         <>
-            <div className="pt-28 mx-auto container">
+            <div className="pt-32 mx-auto container">
                 <h3 className="font-bold xl:text-6xl md:text-5xl text-4xl text-center">Echo Forest NFT Mint</h3>
 
                 <div className="px-4 3xl:px-20 2xl:px-16 xl:px-12 lg:px-8 sm:px-6 xs:px-5 mt-20 text-center total-mint">
@@ -260,7 +264,7 @@ const UpcomingMint = () => {
                     </div>
                 </div>
 
-                <div className="flex justify-center mt-20">
+                <div className="flex justify-center">
                     <table className="echoapp table-fixed text-2xl w-11/12">
                         <thead>
                             <tr>
@@ -291,7 +295,7 @@ const UpcomingMint = () => {
                 </div>
 
                 <div className="px-4 3xl:px-20 2xl:px-16 xl:px-12 lg:px-8 sm:px-6 xs:px-5 mt-20 text-center">
-                    <div className="text-2xl text-center tracking-wide text-2xl tracking-wide py-16 px-2">
+                    <div className="text-2xl text-center tracking-wide text-2xl tracking-wide pt-16 pb-5 px-2">
                         <h3 className="font-bold xl:text-6xl md:text-5xl text-4xl text-center tracking-normal pb-12">The Echo Forest DAO</h3>
                         <div className="text-xl ">
                             <p className="pb-5">Leveraging art and technology to drive forest conservation across the world</p>

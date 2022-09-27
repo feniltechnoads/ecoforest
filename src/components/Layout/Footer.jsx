@@ -73,15 +73,15 @@ function Footer() {
             <p className="text-lg font-bold ">Social Media</p>
             <div className="flex items-center space-x-4 text-xl">
               <a
-                href="https://www.facebook.com/login/"
+                href="https://discord.com/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className=" fa-brands  fa-facebook-f flex items-center   justify-center rounded-full w-12 h-12  border-[2px]  border-black hover:text-white text-black transition ease-in delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300  hover:shadow-lg"></i>
+                <i className="fa-brands fa-discord flex items-center justify-center rounded-full w-12 h-12  border-[2px] border-black hover:text-white text-black transition ease-in delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300 hover:shadow-lg"></i>
               </a>
 
               <a href="https://twitter.com/" target="_blank" rel="noreferrer">
-                <i className="fa-brands fa-twitter flex items-center   justify-center rounded-full border-[2px]   w-12 h-12 border-black hover:text-white text-black transition ease-in delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300  hover:shadow-lg"></i>
+                <i className="fa-brands fa-twitter flex items-center justify-center rounded-full border-[2px] w-12 h-12 border-black hover:text-white text-black transition ease-in delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300 hover:shadow-lg"></i>
               </a>
 
               <a
@@ -89,7 +89,7 @@ function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="fa-brands fa-instagram flex items-center   justify-center rounded-full border-[2px]   w-12 h-12 border-black hover:text-white text-black transition ease-in delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300  hover:shadow-lg"></i>
+                <i className="fa-brands fa-instagram flex items-center justify-center rounded-full border-[2px] w-12 h-12 border-black hover:text-white text-black transition ease-in delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300 hover:shadow-lg"></i>
               </a>
             </div>
           </div>

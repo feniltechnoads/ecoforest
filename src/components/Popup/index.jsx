@@ -1,32 +1,39 @@
 import React, { useState } from "react";
 import "../Popup/index.css";
+import GreetMessage from "../GreetMessage";
 
 const Popup = ({ setOpenModal }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [thankyou, setThankyou] = useState(false);
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
 
-    fetch("http://192.168.29.51:5000/create", {
-      method: "POST",
-      body: {
-        name: name,
-        email: email,
-        message: message,
-      },
-    })
-      .then((res) => res.json(name, message, email))
-      .then((req) => console.log(req));
+    // fetch("http://192.168.29.51:5000/create", {
+    //   method: "POST",
+    //   body: {
+    //     name: name,
+    //     email: email,
+    //     message: message,
+    //   },
+    // })
+    //   .then((res) => res.json(name, message, email))
+    //   .then((req) => console.log(req));
   };
+
 
   return (
     <>
-      <div className="modalBackground fixed top-0  backdrop-blur z-40 bg-black-300 ">
+      {thankyou && <GreetMessage setThankyou={setThankyou} />}
+      <div className="modalBackground fixed top-0  z-0 ">
+      {/* <div className={`modalBackground fixed top-0 backdrop-blur z-40 ${setThankyou(true) ? "absolute" : ""}`}> */}
+      {/* <div className={`modalBackground fixed top-0 ${setThankyou(true) ? "absolute" : "relative"} backdrop-blur z-40`}> */}
+
         <div className="container mx-auto contents my-20">
           {/* <div className="popup"> */}
-          <div className="popup w-3/5 rounded-3xl">
+          <div className="popup w-3/5 rounded-3xl example">
             <div className="grid grid-cols-1 xl:grid-cols-2  ">
               {/* <div className="flex flex-wrap flex-col"> */}
               <div className="leftBox flex flex-col bg-[#e7f5e4] justify-between py-7 md:py-10 px-7 md:px-16 ">
@@ -41,7 +48,7 @@ const Popup = ({ setOpenModal }) => {
                     contact us through any od the social media below.
                   </p>
                 </div>
-                <div className="social">
+                <div className="social block">
                   <h5 className="text-3xl pb-5">Social Media</h5>
                   <div className="flex flex-wrap space-x-3">
                     <a
@@ -82,8 +89,10 @@ const Popup = ({ setOpenModal }) => {
                 <h2 className="text-4xl md:text-5xl font-bold tracking-wide pb-4">
                   Get in touch
                 </h2>
-                <p className="text-xl pb-3">We are here for you. How can we help?</p>
-                <form>
+                <p className="text-xl pb-3">
+                  We are here for you. How can we help?
+                </p>
+                <form onClick={handleOnSubmit}>
                   <label className="block">
                     <input
                       type="text"
@@ -126,8 +135,11 @@ const Popup = ({ setOpenModal }) => {
                   </label>
                   <label className="block text-center mt-5">
                     <button
-                      className="bg-[#000000] hover:bg-gray-500 text-white font-bold py-3 px-8 text-xl rounded transition ease-in-out delay-150 duration-1000"
-                      onClick={handleOnSubmit}
+                      className="bg-[#000000] hover:bg-white border-2 border-black text-white hover:text-black font-bold py-3 px-8 text-xl rounded transition ease-in-out delay-150 duration-1000"
+                      onClick={() => {
+                        setThankyou(true)
+                      }}
+                      // onClick={() => { handleOnSubmitForm, setThankyou(true) }}
                     >
                       Submit
                     </button>

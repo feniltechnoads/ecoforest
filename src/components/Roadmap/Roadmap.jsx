@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import lamp from "../../image/1.svg";
 import lamp_snall from "../../image/Group 102.svg";
 import rocket_small from "../../image/rocket_small.svg";
@@ -22,6 +22,9 @@ import card_small5 from "../../image/card_small5.svg";
 import AOS from "aos";
 function Roadmap() {
   AOS.init();
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
   const roadmap = [
     { id: 0, imgcard: card1, img: lamp, discribe: "2022", top: true },
     { id: 1, imgcard: card2, img: plane, discribe: "2023", top: false },
@@ -47,7 +50,7 @@ function Roadmap() {
       </h3>
 
       <div
-        className="mt-20 lg:grid grid-cols-5 relative hidden place-content-center place-items-center p-5 z-10"
+        className="mt-20 lg:grid grid-cols-5 relative hidden place-content-center place-items-center p-5 z-60"
         data-aos="fade-up"
         data-aos-duration="2000"
       >

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Brooks from "../../image/Brooks.png";
 import Matt from "../../image/Matt.png";
 import Kamila from "../../image/Kamila.png";
@@ -9,6 +9,10 @@ import AOS from "aos";
 
 function Team() {
   AOS.init();
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
 
   const team = [  
     {
@@ -31,9 +35,7 @@ function Team() {
       icon1: "fa-brands fa-linkedin-in",
       link1: "https://www.linkedin.com/in/matthew-benesch/",
       icon2: "fa-brands fa-twitter",
-      link2: "",
       icon3: "fa-brands fa-instagram",
-      link3: "",
     },
     {
       id: 2,
@@ -108,18 +110,18 @@ function Team() {
                 <h5 className="mb-1 text-xl font-bold ">{items.name}</h5>
                 <span className="text-sm ">{items.description}</span>
                 <div className="flex mt-4 space-x-3 md:mt-6 ">
-                  {items.icon1 && <div className="rounded-full">
+                  {items.link1 && <div className="rounded-full">
                     <a href={items.link1} target="_blank" rel="noreferrer">
                       {items.icon1 && <i className={`${items.icon1} rounded-full border-[1px] p-2 border-black hover:text-white text-black transition ease-in delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300  hover:shadow-lg`}></i>}
                     </a>
                   </div>}
 
-                  {items.icon2 && <div className=" rounded-full">
+                  {items.link2 && <div className=" rounded-full">
                     <a href={items.link2} target="_blank" rel="noreferrer">
                       {items.icon2 && <i className={`${items.icon2} rounded-full border-[1px] p-2 border-black hover:text-white text-black transition ease-in delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300  hover:shadow-lg`}></i>}
                     </a>
                   </div>}
-                  {items.icon3 && <div className=" rounded-full">
+                  {items.link3 && <div className=" rounded-full">
                     <a href={items.link3} target="_blank" rel="noreferrer">
                       {items.icon3 && <i className={`${items.icon3} rounded-full border-[1px] p-2 border-black hover:text-white text-black transition ease-in delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300  hover:shadow-lg`}></i>}
                     </a>

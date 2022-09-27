@@ -1,0 +1,64 @@
+@import url(//db.onlinewebfonts.com/c/e9591193aa91ce28ad8c8f91c03f6c7b?family=TerminaW05-Bold);
+@import url(//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy);
+
+
+
+.greet-message
+{
+  height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: 8px;
+    position: fixed;
+}
+
+.greet-message div
+{
+  /* -webkit-animation-name: animatetop; */
+  /* -webkit-animation-duration: 0.7s; */
+  animation-name: animatetop;
+  animation-duration: 0.7s;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.greet-message .py-11
+{
+    box-shadow: 1px 1px 11px 2px rgba(0, 0, 0, 0.15);
+}
+
+.thanksContent h3.thanks
+{
+  font-family: "TerminaW05-Bold";
+}
+
+.thanksContent p
+{
+  font-family: "Gilroy";
+}
+
+.thanksContent button
+{
+  font-family: "Gilroy-Bold";
+}

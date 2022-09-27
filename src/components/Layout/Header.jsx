@@ -56,7 +56,7 @@ function Header() {
           </div>
           <div className="lg:absolute  lg:right-40 md:flex hidden">
             <h1 className=" rounded-lg py-2 px-4 bg-black text-white whitespace-nowrap  transition ease-in-out delay-150  hover:-translate-y-1 duration-1000 hover:shadow-lg shadow-lg hover:bg-white hover:text-black">
-              <Link to="/signup">Connect Wallet</Link>
+              <Link>Connect Wallet</Link>
             </h1>
           </div>
         </header>
@@ -126,7 +126,7 @@ function Header() {
                 <Link to="/ourteam">Our Team</Link>
               </div>
               <h1 className=" rounded-lg py-2 px-4 bg-black text-white whitespace-nowrap transition ease-in-out delay-150 hover:-translate-y-1 duration-1000 hover:shadow-lg shadow-lg hover:bg-white hover:text-black">
-                <Link to="/signup">Connect Wallet</Link>
+                <Link>Connect Wallet</Link>
               </h1>
             </div>
           </>
