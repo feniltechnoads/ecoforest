@@ -20,23 +20,6 @@
 
 <body>
   <div id="root"></div>
-  <script> 
-      var scrollTrigger = 60;
-
-      window.onscroll = function () {
-        console.log(window.scrollY >= scrollTrigger ||
-          window.pageYOffset >= scrollTrigger)
-        if (
-          window.scrollY >= scrollTrigger ||
-          window.pageYOffset >= scrollTrigger
-        ) {
-          document.getElementsByTagName("header")[0].classList.add("inverted");
-        } else {
-          document.getElementsByTagName("header")[0].classList.remove("inverted");
-        }
-      };
-    </script>
-    
     
 </body>
 

@@ -7,6 +7,19 @@ function Header() {
   const [active, setactive] = useState(1);
   const [toggle, settoggle] = useState(false);
 
+  var scrollTrigger = 60;
+
+  window.onscroll = function () {
+    if (
+      window.scrollY >= scrollTrigger ||
+      window.pageYOffset >= scrollTrigger
+    ) {
+      document.getElementsByTagName("header")[0].classList.add("inverted");
+    } else {
+      document.getElementsByTagName("header")[0].classList.remove("inverted");
+    }
+  };
+
   return (
     <>
       <nav>

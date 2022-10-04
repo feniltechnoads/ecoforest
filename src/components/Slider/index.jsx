@@ -1,4 +1,5 @@
 import React from "react";
+import "../Slider/index.css"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -23,7 +24,7 @@ const Sliders = () => {
     return (
         <>
             <div className="mt-20 3xl:mt-60 2xl:mt-60 xl:mt-60 md:mt-32">
-                <Slider {...settings} className= "mx-auto w-9/12">
+                <Slider {...settings} className= "mx-auto md:w-9/12">
                     <div className="">
                         <img src={SliderImage2} className="px-2" alt="" />
                     </div>

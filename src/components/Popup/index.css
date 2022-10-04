@@ -51,7 +51,7 @@
 .popup h2 {
   /* font-family: ; */
   font-family: "TerminaW05-Bold"; 
-  line-height: 61px;
+  line-height: 50px;
 }
 
 .popup p,
@@ -65,12 +65,8 @@
   font-family: "Gilroy-Bold";
 }
 
-.social-discord:before {
-  font-size: 25px;
-}
-.social-twitter:before {
-  font-size: 20px;
-}
+.social-discord:before,
+.social-twitter:before,
 .social-insta:before {
   font-size: 20px;
 }

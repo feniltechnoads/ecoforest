@@ -5,6 +5,7 @@ import Kamila from "../../image/Kamila.png";
 import Mohttaj from "../../image/Mohttaj.png";
 import Anandi from "../../image/Anandi.png";
 import Drewselstinian from "../../image/Drewselstinian.png";
+import "../Team/index.css"
 import AOS from "aos";
 
 function Team() {
@@ -83,14 +84,16 @@ function Team() {
   return (
     <>
       <div className="pt-32 mx-auto container" id="team">
-        <p
-          className="font-bold xl:text-6xl md:text-5xl text-4xl  text-center"
+        <h5
+          className="font-bold xl:text-6xl md:text-5xl text-4xl text-center"
           data-aos="fade-up"
           data-aos-duration="2000"
         >
-          The <span className="text-[#9DC693]">Guardians</span> of <br /> the
-          Forest
-        </p>
+          <span className="block">
+            The <span className="text-[#9DC693]">Guardians</span> of
+          </span>
+           <span className="block">the Forest</span>
+        </h5>
         <div className=" gap-10  md:p-5 p-0 flex flex-wrap justify-center ">
           {team.map((items, key) => (
             <div
@@ -105,9 +108,9 @@ function Team() {
                 <img
                   className="mb-3 w-48 h-48 rounded-full shadow-lg"
                   src={items.img}
-                  alt="Bonnie image"
+                  alt="Bonnie"
                 />
-                <h5 className="mb-1 text-xl font-bold ">{items.name}</h5>
+                <h5 className="mb-1 text-xl font-bold member-name">{items.name}</h5>
                 <span className="text-sm ">{items.description}</span>
                 <div className="flex mt-4 space-x-3 md:mt-6 ">
                   {items.link1 && <div className="rounded-full">

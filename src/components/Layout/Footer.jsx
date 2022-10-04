@@ -63,7 +63,8 @@ function Footer() {
                   setOpenModal(true);
                 }}
                 rel="noopener noreferrer"
-                className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500 hover:border-black  hover:border-b-2 w-fit"
+                data-bs-toggle="modal" data-bs-target="#exampleModal"
+                className="transition ease-in delay-150  hover:-translate-y-1 hover:scale-110 duration-500 hover:border-black  hover:border-b-2 w-fit"
               >
                 Contact Us
               </Link>
@@ -94,9 +95,9 @@ function Footer() {
             </div>
           </div>
         </div>
-        <h1 className="flex justify-center text-center p-12">
+        <p className="flex justify-center text-center p-12">
           &#169; {new Date().getFullYear()} Echo Forest. All rights reserved
-        </h1>
+        </p>
       </div>
     </>
   );

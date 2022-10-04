@@ -4,5 +4,10 @@
     background-repeat: no-repeat;
     height: 100vh;  
     background-position: center;
-    transition: background-color 0.8s ease-in-out;  
+    transition: 0.8s ease-in-out;  
+}
+
+.welcome,
+.ecoforest{
+    font-family: TerminaW05-Bold !important;
 }

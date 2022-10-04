@@ -190,14 +190,14 @@ const UpcomingMint = () => {
                 <h3 className="font-bold xl:text-6xl md:text-5xl text-4xl text-center">Echo Forest NFT Mint</h3>
 
                 <div className="px-4 3xl:px-20 2xl:px-16 xl:px-12 lg:px-8 sm:px-6 xs:px-5 mt-20 text-center total-mint">
-                    <div className="text-2xl text-center tracking-wide text-2xl tracking-wide py-16 px-2">
+                    <div className="text-2xl text-center tracking-wide py-16 px-2">
                         <p className="pb-5">
                             <span className="font-bold">Total Mint:</span> 10,000 NFT
-                            collection (9,500 public sale, 500 for team use).{" "}
+                            collection (9,500 public sale, 500 for team use).
                         </p>
                         <p className="pb-5">
-                            <span className="font-bold">Mint Date and Time:</span> October
-                            1st, 2022 @ 3pm EST.
+                            <span className="font-bold">Mint Date and Time:</span> November
+                            5th, 2022 @ 5pm EST.
                         </p>
                         <p className="pb-5 px-5 3xl:px-56 2xl:px-50 xl:px-40 lg:px-24">
                             <span className="font-bold">Price:</span>
@@ -232,7 +232,7 @@ const UpcomingMint = () => {
                     </table>
                 </div>
 
-                <div className="text-2xl mt-20 text-center">
+                <div className="text-2xl mt-20 text-center leading-10">
                     <p><span className="font-bold">Whitelisted spots:</span> 0</p>
                     <p><span className="font-bold">Mints per unique Solana wallet address:</span> unlimited</p>
                     <p><span className="font-bold">Mint Location:</span> <a href="" className="underline decoration-1 text-sky-900">https://echoforest.app/mint</a></p>
@@ -257,7 +257,7 @@ const UpcomingMint = () => {
 
             <div className="mx-auto container">
                 <div className="px-4 3xl:px-20 2xl:px-16 xl:px-12 lg:px-8 sm:px-6 xs:px-5 mt-20 text-center">
-                    <div className="text-2xl text-center tracking-wide text-2xl tracking-wide py-16 px-2">
+                    <div className="text-2xl text-center tracking-wide tracking-wide py-16 px-2">
                         <h3 className="font-bold xl:text-6xl md:text-5xl text-4xl text-center tracking-normal pb-12">EXP and the Echo App</h3>
                         <p className="pb-5 px-5">EXP is the token that powers the Echoverse. The new Echo App is the only gaming platform that rewards<br/> gamers for their engagement. The Echo App is free to download and gamers earn EXP by playing games<br/>that are already available on Xbox, PS5, and PC.</p>
                         <p className="pb-5 px-5">EXP has a total supply of 1.5 billion tokens. 50% of the total suppl (or 750,000,000 EXP) is distributed to <br/>Echo Forest NFT holders over a 15-year period.</p>

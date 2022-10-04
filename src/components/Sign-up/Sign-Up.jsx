@@ -39,9 +39,9 @@ function SignUp() {
           data-aos-duration="2000"
         >
           <div className="text-center space-y-5">
-            <p className="font-bold xl:text-6xl md:text-5xl text-3xl ">
+            <h5 className="font-bold xl:text-5xl md:text-4xl text-2xl ">
               Join Our Newsletter
-            </p>
+            </h5>
             <p>
               Sign Up today for free and be the first to <br />
               get notified on new updates.
