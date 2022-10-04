@@ -7,7 +7,12 @@
     transition: 0.8s ease-in-out;  
 }
 
+@font-face {
+    font-family: "TerminaW05-Bold";
+    src: url(../../Asset/Fonts/Termina/Termina\ W05\ Bold.ttf);
+}
+
 .welcome,
 .ecoforest{
-    font-family: TerminaW05-Bold !important;
+    font-family: "TerminaW05-Bold";
 }

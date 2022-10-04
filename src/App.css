@@ -1,9 +1,16 @@
-@import url(//db.onlinewebfonts.com/c/040a78b437acd0433612f92e61d04a1b?family=Gilroy-Medium);
-@import url(//db.onlinewebfonts.com/c/e9591193aa91ce28ad8c8f91c03f6c7b?family=TerminaW05-Bold);
-
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url(./Asset/Fonts/Gilroy/Gilroy-Medium.ttf);
+}
 
 *{
-    font-family: Gilroy-Medium;
+    font-family: "Gilroy-Medium";
+}
+
+
+@font-face {
+    font-family: "TerminaW05-Bold";
+    src: url(./Asset/Fonts/Termina/Termina\ W05\ Bold.ttf);
 }
 
 h1,
@@ -12,5 +19,5 @@ h3,
 h4,
 h5,
 h6{
-    font-family: TerminaW05-Bold !important;
+    font-family: "TerminaW05-Bold";
 }

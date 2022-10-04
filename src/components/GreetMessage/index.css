@@ -1,10 +1,3 @@
-@import url(//db.onlinewebfonts.com/c/e9591193aa91ce28ad8c8f91c03f6c7b?family=TerminaW05-Bold);
-@import url(//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy);
-@import url(//db.onlinewebfonts.com/c/1064f0ad1cb65fdab43bb592ddd8aa91?family=Gilroy-Bold);
-
-
-
-
 .greet-message
 {
   height: 60vh;
@@ -17,8 +10,6 @@
 
 .greet-message div
 {
-  /* -webkit-animation-name: animatetop; */
-  /* -webkit-animation-duration: 0.7s; */
   animation-name: animatetop;
   animation-duration: 0.7s;
 }
@@ -50,14 +41,43 @@
     box-shadow: 1px 1px 11px 2px rgba(0, 0, 0, 0.15);
 }
 
+
+
+
+
+@font-face {
+  font-family: "TerminaW05-Bold";
+  src: url(../../Asset/Fonts/Termina/Termina\ W05\ Bold.ttf);
+}
+
 .thanksContent h3.thanks
 {
   font-family: "TerminaW05-Bold";
 }
 
+
+
+
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../../Asset/Fonts/Gilroy/Gilroy-Regular.ttf);
+}
+
 .thanksContent p
 {
   font-family: "Gilroy";
+}
+
+
+
+
+
+
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url(../../Asset/Fonts/Gilroy/Gilroy-Bold.ttf);
 }
 
 .thanksContent button
